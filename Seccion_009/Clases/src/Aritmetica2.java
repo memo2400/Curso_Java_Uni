@@ -1,4 +1,4 @@
-public class Aritmetica {
+public class Aritmetica2 {
 
 // valor default 0
 // estas variables duran mas que las de los metodos
@@ -6,10 +6,12 @@ public class Aritmetica {
     int operando2;
 
     // Constructor, es un metodo especial, se llama igual que la clase, publico para ser llamado desde fuera
-    public Aritmetica(){
+    public Aritmetica2(int op1, int op2){
 
         // si no hay parametro es un constructo vacio
         // asi es como se crean por default
+        operando1 = op1;
+        operando2 = op2;
 
     }
 
@@ -32,18 +34,12 @@ public class Aritmetica {
         
         // aqui se crean 2 objetos
         System.out.println("*** Metodo aritmetica ***");
-        // cunado lo creamos, se crean los valores de atributos por default
-        // es un constructor vacio
-        var Aritmetica1 = new Aritmetica();
-        Aritmetica1.sumar();
-        Aritmetica1.operando1 = 5;
-        Aritmetica1.operando2 = 7;
+        // constuctor nos permite asignar los valors desde la creacion del objeto/instancia
+        var Aritmetica1 = new Aritmetica2(10, 8);
         Aritmetica1.sumar();
         Aritmetica1.restar();
 
-        var Aritmetica2 = new Aritmetica();
-
-        // constuctor nos permite asignar los valors desde la creacion del objeto/instancia
+        
     }
 
 }
