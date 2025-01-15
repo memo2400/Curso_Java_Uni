@@ -3,7 +3,8 @@
 // el objeto es una representacion de algo de nuestro mundo real
 public class Persona {
 
-    String nombre;
+    // valor default de String es nulo
+    String nombre; 
     String apellido;
 
     void mostrarPersona(){
@@ -17,14 +18,23 @@ public class Persona {
         
         // reservamos espacio de memoria, del objeto porque no pasamos parametros
         // variable que guarda = objeto creado
-        Persona objeto1 = new Persona(); 
-        // var objeto2 = new Persona();     // segun esta jala,pero no es cierto
+        // Persona objeto1 = new Persona(); 
+        var objeto1 = new Persona(); 
 
         // responde null
         objeto1.mostrarPersona();
-        // objeto1.nombre
-        // objeto1.
 
         // 03:58 min
+
+        // ciertamente esta es una mala practica
+        objeto1.nombre = "Mark";
+        objeto1.apellido = "Zukerberg";
+        objeto1.mostrarPersona();
+
+        var objeto2 = new Persona();
+        objeto2.nombre = "Jen-Hsun";
+        objeto2.apellido = "Huang";
+        objeto2.mostrarPersona();
+
     }
 }
