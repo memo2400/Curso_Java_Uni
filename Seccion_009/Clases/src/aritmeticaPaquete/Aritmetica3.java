@@ -1,3 +1,8 @@
+package aritmeticaPaquete;
+
+// Los paquetes nos sirve para ornanizar los archivos y clases.
+// hay cambios por hacerse paquete, el paquete debe empezar en minusculas
+
 public class Aritmetica3 {
 
 // valor default 0
@@ -64,3 +69,6 @@ public class Aritmetica3 {
     }
 
 }
+
+
+
