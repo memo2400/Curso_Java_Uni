@@ -4,6 +4,11 @@ public class Aritmetica2 {
 // estas variables duran mas que las de los metodos
     int operando1;
     int operando2;
+    
+    // el constructor no tiene nada de void ni eso
+    public Aritmetica2(){
+
+    }
 
     // Constructor, es un metodo especial, se llama igual que la clase, publico para ser llamado desde fuera
     public Aritmetica2(int op1, int op2){
@@ -39,7 +44,13 @@ public class Aritmetica2 {
         Aritmetica1.sumar();
         Aritmetica1.restar();
 
-        
+
+        // este da error, porque espra 2 argumentos, pero haciendo en constructo vacio, ya jala
+        // sobrecarga de constructores
+        var Aritmetica2 = new Aritmetica2();
+        Aritmetica2.operando1 = 15;
+        Aritmetica2.operando2 = 35;
+        Aritmetica2.sumar();
     }
 
 }
