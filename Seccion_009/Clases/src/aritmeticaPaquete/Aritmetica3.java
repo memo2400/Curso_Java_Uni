@@ -7,8 +7,8 @@ public class Aritmetica3 {
 
 // valor default 0
 // estas variables duran mas que las de los metodos
-    int operando1;
-    int operando2;
+    private int operando1;
+    private int operando2;
     
     // el constructor no tiene nada de void ni eso
     public Aritmetica3(){
@@ -42,6 +42,22 @@ public class Aritmetica3 {
         int resultado = operando1 - operando2;
         System.out.println("Resta es: " + resultado);
 
+    }
+
+    public int getOperando1(){
+        return this.operando1; // hacemos referecnia a la instancia actual
+    }
+
+    public void setOperando1(int operando){
+        this.operando1 = operando;
+    }
+
+    public int getOperando2(){
+        return this.operando2;
+    }
+
+    public void setOperando2(int operando){
+        this.operando2 = operando;
     }
 
     

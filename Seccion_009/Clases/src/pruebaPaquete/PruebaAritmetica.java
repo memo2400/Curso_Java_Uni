@@ -17,12 +17,15 @@ public class PruebaAritmetica {
         Aritmetica1.restar();
         // lo que esta depues del @ es la memoria RAM @72ea2f77
         System.out.println("Dir Memoria: aritmetica1: " + Aritmetica1);
+        System.out.println("** getter operando 1: " + Aritmetica1.getOperando1());
+        Aritmetica1.setOperando1(22);
+        System.out.println("** El operando 1 modificado es: " + Aritmetica1.getOperando1());
         System.out.println();
 
         // este da error, porque espra 2 argumentos, pero haciendo en constructo vacio, ya jala
         // sobrecarga de constructores
         var Aritmetica_2 = new Aritmetica3(15,30);
-        // Aritmetica_2.operando1 = 20;
+        //Aritmetica_2.operando1 = 20;
         // Aritmetica_2.operando2 = 35;
         Aritmetica_2.sumar();
 

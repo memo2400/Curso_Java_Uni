@@ -1,0 +1,12 @@
+Lecc 109
+
+el encapsulameto sirve para controlar acceso de atributos de la clase
+
+se usa private para que no accedamos directamente, eso tambien se le llama el estado del objeto
+
+se usaran los getters y setters, esos si son publicos, los que ya vimo con el curso 1 YT
+
+
+
+privado (-)
+publico (+)
